@@ -116,3 +116,24 @@
 .result__text_type_decision {
   text-transform: uppercase;
 }
+
+.sorry {
+  display: none;
+  margin: 20px;
+  font-size: 26px;
+}
+
+@media screen and (max-width: 460px) {
+  .title,
+  .voters-form,
+  .option,
+  .user-form,
+  .result-topic,
+  .result {
+    display: none;
+  }
+
+  .sorry {
+    display: block;
+  }
+}

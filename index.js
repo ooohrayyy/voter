@@ -126,11 +126,12 @@ function appendResult(formType) {
 
   title.parentNode.insertBefore(resultElement, title.nextSibling)
 
-  const resultsTopic = document.createElement('h2')
+  const resultsTopicNode = document.createElement('h2')
 
-  resultsTopic.textContent = formType === 'voters' ? votersTopicInput.value : userTopicInput.value
+  resultsTopicNode.textContent = formType === 'voters' ? votersTopicInput.value : userTopicInput.value
+  resultsTopicNode.classList.add('result-topic')
 
-  title.parentNode.insertBefore(resultsTopic, title.nextSibling)
+  title.parentNode.insertBefore(resultsTopicNode, title.nextSibling)
 
   option.remove()
   votersForm.remove()
