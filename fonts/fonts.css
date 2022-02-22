@@ -1,6 +1,7 @@
 @font-face {
-  font-family: Dopis;
-  src: url(./Dopis-Regular.woff2) format("woff2"),
-    url(./Dopis-Regular.woff) format("woff");
+  font-family: 'Arial Nova';
+  src: url(./ArialNova.woff2) format("woff2"),
+    url(./ArialNova.woff) format("woff"),
+    url(./ArialNova.ttf) format("opentype");
   font-weight: 400;
 }

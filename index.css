@@ -37,8 +37,9 @@
   align-content: center;
   width: 450px;
   height: 250px;
-  font-family: Dopis, sans-serif;
+  font-family: 'Arial Nova', sans-serif;
   font-size: 24px;
+  letter-spacing: 1px;
   background-color: #010185;
   user-select: none;
 }
@@ -61,6 +62,7 @@
   display: flex;
   justify-content: center;
   margin: 3px 10px;
+  letter-spacing: 1px;
   color: #fdfcfa;
 }
 
@@ -105,7 +107,10 @@
 .result__against-prc,
 .result__halt-prc,
 .result__voted-prc {
+  display: inline-block;
   order: 4;
+  width: 60px;
+  text-align: end;
 }
 
 .result__text_type_decision {
