@@ -31,16 +31,12 @@ let absentVoters
 
 function validateForm(formType) {
   if (formType === 'voters') {
-    console.log('Validating voters form')
-
     if (!votersForm.checkValidity()) {
       votersFormSubmit.disabled = true
     } else {
       votersFormSubmit.disabled = false
     }
   } else if (formType === 'user') {
-    console.log('Validating user form')
-
     countVotes()
 
     if (!userForm.checkValidity() || votedVoters > totalVoters) {
