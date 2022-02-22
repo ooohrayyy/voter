@@ -109,7 +109,7 @@
 .result__voted-prc {
   display: inline-block;
   order: 4;
-  width: 60px;
+  min-width: 60px;
   text-align: end;
 }
 
