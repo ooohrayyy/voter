@@ -1,0 +1,6 @@
+@font-face {
+  font-family: Dopis;
+  src: url(./Dopis-Regular.woff2) format("woff2"),
+    url(./Dopis-Regular.woff) format("woff");
+  font-weight: 400;
+}

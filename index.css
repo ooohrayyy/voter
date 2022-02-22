@@ -1,0 +1,99 @@
+@import url('./fonts/fonts.css');
+
+.root,
+.voters-form,
+.user-form,
+.voters-form__label,
+.user-form__label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.title {
+  margin: 100px 0 50px;
+  font-size: 36px;
+}
+
+.voters-form__label,
+.option {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.voters-form__input,
+.user-form__input {
+  display: block;
+  margin: 20px 0;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  width: 450px;
+  height: 250px;
+  font-family: Dopis, sans-serif;
+  font-size: 18px;
+  background-color: #010185;
+}
+
+.result__title {
+  margin: 3px 0;
+  text-align: center;
+  color: #fdfcfa;
+}
+
+.result__list {
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.result__text {
+  display: flex;
+  justify-content: center;
+  margin: 3px 5px;
+  color: #fdfcfa;
+}
+
+.result__label {
+  order: 1;
+}
+
+.result__text::after {
+  content: "";
+  flex-grow: 1;
+  height: 1em;
+  order: 2;
+  margin: 0 5px;
+  background-image: radial-gradient(circle, currentcolor 1px, transparent 1.5px);
+  background-position: bottom;
+  background-size: 1ex 4.5px;
+  background-repeat: space no-repeat;
+}
+
+.result__in-favor,
+.result__against,
+.result__halt,
+.result__voted {
+  order: 3;
+  margin-right: 5px;
+}
+
+.result__in-favor-prc,
+.result__against-prc,
+.result__halt-prc,
+.result__voted-prc {
+  order: 4;
+}
+
+.result__text_type_decision {
+  text-transform: uppercase;
+}

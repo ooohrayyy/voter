@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Голосователь</title>
+</head>
+<body class="root">
+  <h1 class="title">Голосователь</h1>
+  <form class="voters-form">
+    <label class="voters-form__label">
+      Задайте депутатам тему для голосования:
+      <input class="voters-form__input" type="text" required>
+    </label>
+    <button class="voters-form__submit" type="submit">Вынести на голосование</button>
+  </form>
+  <p class="option">Или проголосуйте самостоятельно</p>
+  <form class="user-form">
+    <label class="user-form__label">Тема голосования
+      <input
+        class="user-form__input user-form__input_type_topic"
+        type="text"
+        required
+      >
+    </label>
+    <label class="user-form__label">Сколько депутатов голосует?
+      <input
+        class="user-form__input user-form__input_type_voters"
+        type="number"
+        min="0"
+        required
+      >
+    </label>
+    <label class="user-form__label">Сколько за?
+      <input
+        class="user-form__input user-form__input_type_in-favor"
+        type="number"
+        min="0"
+        required
+      >
+    </label>
+    <label class="user-form__label">Сколько против?
+      <input
+        class="user-form__input user-form__input_type_against"
+        type="number"
+        min="0"
+        required
+      >
+    </label>
+    <label class="user-form__label">Сколько воздержались?
+      <input
+        class="user-form__input user-form__input_type_halt"
+        type="number"
+        min="0"
+        required
+      >
+    </label>
+    <button class="user-form__submit" type="submit" disabled>Проголосовать</button>
+  </form>
+  <template id="results-template">
+    <section class="result">
+      <p class="result__text">Государственная Дума</p>
+      <p class="result__text result__text_type_time">%time</p>
+      <ul class="result__list">
+        <li class="result__text">
+          <span class="result__label">За</span>
+          <span class="result__in-favor">%count</span>
+          <span class="result__in-favor-prc">%percent</span>
+        </li>
+        <li class="result__text">
+          <span class="result__label">Против</span>
+          <span class="result__against">%count</span>
+          <span class="result__against-prc">%percent</span>
+        </li>
+        <li class="result__text">
+          <span class="result__label">Воздержалось</span>
+          <span class="result__halt">%count</span>
+          <span class="result__halt-prc">%percent</span>
+        </li>
+        <li class="result__text">
+          <span class="result__label">Голосовало</span>
+          <span class="result__voted">%count</span>
+          <span class="result__voted-prc">%percent</span>
+        </li>
+      </ul>
+      <p class="result__text result__text_type_decision">Решение принято</p>
+    </section>
+  </template>
+  <script src="index.js"></script>
+</body>
+</html>
