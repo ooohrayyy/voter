@@ -38,8 +38,9 @@
   width: 450px;
   height: 250px;
   font-family: Dopis, sans-serif;
-  font-size: 18px;
+  font-size: 24px;
   background-color: #010185;
+  user-select: none;
 }
 
 .result__title {
@@ -59,24 +60,37 @@
 .result__text {
   display: flex;
   justify-content: center;
-  margin: 3px 5px;
+  margin: 3px 10px;
   color: #fdfcfa;
 }
 
-.result__label {
-  order: 1;
+.result__text_type_vote-type {
+  margin-bottom: 0;
 }
 
-.result__text::after {
+.result__text_type_parliament {
+  margin-top: 0;
+  line-height: 10px;
+}
+
+.result__text_type_graph {
+  font-size: 20px;
+}
+
+.result__text_type_graph::after {
   content: "";
   flex-grow: 1;
-  height: 1em;
   order: 2;
+  height: 1em;
   margin: 0 5px;
   background-image: radial-gradient(circle, currentcolor 1px, transparent 1.5px);
   background-position: bottom;
   background-size: 1ex 4.5px;
   background-repeat: space no-repeat;
+}
+
+.result__label {
+  order: 1;
 }
 
 .result__in-favor,

@@ -60,26 +60,26 @@
   </form>
   <template id="results-template">
     <section class="result">
-      <p class="result__text">Количественное голосование</p>
-      <p class="result__text">Государственная Дума</p>
+      <p class="result__text result__text_type_vote-type">Количественное голосование</p>
+      <p class="result__text result__text_type_parliament">Государственная Дума</p>
       <p class="result__text result__text_type_time">%time</p>
       <ul class="result__list">
-        <li class="result__text">
+        <li class="result__text result__text_type_graph">
           <span class="result__label">За</span>
           <span class="result__in-favor">%count</span>
           <span class="result__in-favor-prc">%percent</span>
         </li>
-        <li class="result__text">
+        <li class="result__text result__text_type_graph">
           <span class="result__label">Против</span>
           <span class="result__against">%count</span>
           <span class="result__against-prc">%percent</span>
         </li>
-        <li class="result__text">
+        <li class="result__text result__text_type_graph">
           <span class="result__label">Воздержалось</span>
           <span class="result__halt">%count</span>
           <span class="result__halt-prc">%percent</span>
         </li>
-        <li class="result__text">
+        <li class="result__text result__text_type_graph">
           <span class="result__label">Голосовало</span>
           <span class="result__voted">%count</span>
           <span class="result__voted-prc">%percent</span>
