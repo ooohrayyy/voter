@@ -6,7 +6,7 @@ const template = document.querySelector('#results-template')
 
 const votersForm = document.querySelector('.voters-form')
 const votersTopicInput = votersForm.querySelector('.voters-form__input')
-const votersFormSubmit = document.querySelector('.voters-form__submit')
+const votersFormSubmit = votersForm.querySelector('.voters-form__submit')
 
 const userForm = document.querySelector('.user-form')
 const userTopicInput = userForm.querySelector('.user-form__input_type_topic')
