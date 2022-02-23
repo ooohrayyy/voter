@@ -117,23 +117,14 @@
   text-transform: uppercase;
 }
 
-.sorry {
-  display: none;
-  margin: 20px;
-  font-size: 26px;
-}
-
-@media screen and (max-width: 460px) {
-  .title,
-  .voters-form,
-  .option,
-  .user-form,
-  .result-topic,
+@media screen and (max-width: 455px) {
   .result {
-    display: none;
+    width: 300px;
+    height: 167px;
+    font-size: 14px;
   }
 
-  .sorry {
-    display: block;
+  .result__text_type_graph {
+    font-size: 14px;
   }
 }
