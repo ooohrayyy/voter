@@ -3,6 +3,11 @@
 :root {
   --results-background-color: #010185;
   --results-text-color: #fdfcfa;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
 }
 
 .body,
@@ -18,7 +23,7 @@
 }
 
 .title {
-  margin: 100px 0 50px;
+  margin: 0 0 50px;
   font-size: 36px;
 }
 
@@ -26,6 +31,7 @@
 .option {
   font-size: 20px;
   font-weight: 700;
+  text-align: center;
 }
 
 .voters-form__input,
@@ -129,5 +135,16 @@
 
   .result__text_type_graph {
     font-size: 14px;
+  }
+}
+
+@media screen and (max-height: 850px) {
+  :root {
+    display: block;
+    height: auto;
+  }
+
+  .body {
+    margin: 50px 0;
   }
 }
